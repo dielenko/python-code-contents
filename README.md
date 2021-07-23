@@ -191,7 +191,7 @@ print('Is "a" is greater than "Z":', 'a' > 'Z')
 
 **not** - reverse the boolean output \
 **and** - True if all conditions are true \
-**or** - True if at least one condition is true \
+**or** - True if at least one condition is true
 
 ````python
 ```
