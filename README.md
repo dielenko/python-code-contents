@@ -189,9 +189,9 @@ print('Is "a" is greater than "Z":', 'a' > 'Z')
 
 > Keep the order of the operators when evaluate condition
 
-**not** - reverse the boolean output
-**and** - True if all conditions are true
-**or** - True if at least one condition is true
+**not** - reverse the boolean output \
+**and** - True if all conditions are true \
+**or** - True if at least one condition is true \
 
 ````python
 ```
