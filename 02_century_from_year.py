@@ -9,4 +9,4 @@ def century_from_year(x):
         return odd_year
 
 user_input = int(input('Add year: '))
-print(century_from_year(1905))
+print(century_from_year(user_input))
