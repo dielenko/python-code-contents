@@ -3,79 +3,107 @@ Details: https://www.youtube.com/watch?v=VchuKL44s6E
 
 ## Data Types
 
-### Int
+>**Int**
 
+````python
+```
 -267236
 76373
+```
+````
 
-### Float
+>**Float**
 
+````python
+```
 2727.0
 -9.7
+```
+````
 
-### String
+>**String**
 
+````python
+```
 'hello'
 "hello"
 'hello"'
 '.4.6'
+```
+````
 
-### Bool
+>**Bool**
 
-//1
+````python
+```
+# Set to 1
+
 True
 
-//0
+#Set to 0
+
 False
+```
+````
 
 ## Output and Printing
 
+````python
+```
 print('Hello World!')
 print(4.5)
 print('Hello World!',4.5)
 print('Hello World!',4.5, end='|')
 print('Hello World!',4.5, end='\n')
+```
+````
 
 ## Variables
 
+````python
+```
 hello = 'tim'
 world = 'world'
 hello = world
 hello = 'no'
 print(hello, world)
+```
+````
 
-// Variables Naming convention
-snake_case
+> Variables Naming convention
+**snake_case**
 
 ## Getting User Input
 
-// Default output from the input comes out as STRING
+> Default output from the input comes out as STRING
 
+````python
+```
 name = input('Name: ')
 age = input('Age: ')
 print('Hello', name, 'you are', age, 'years old')
+```
+````
 
 ## Arithmetic operators
 
-// Division always return Float
+> Division always return Float
 
+````python
+```
 x = 10
 y = 3
 
 result = x + y
-
 print(result)
 
 result = x ** y
-
 print(result)
 
 result = x // y  # Floor division gives us integer result
-
 print(result)
 
 result = x % y  # Procent division
-
 print(result)
 
 B
@@ -89,7 +117,7 @@ num = input('Number: ')
 print(int(num) - 5)
 print(float(num) - 5)
 
-// Additional information
+# Additional information
 x1 = 'hello'
 y1 = 3
 string_by_integer = x1 * y1  # Multiply string by integer
@@ -101,9 +129,13 @@ y2 = '3'
 concatenate_strings = x2 + y2  # Concatenate strings
 
 print(concatenate_strings)
+```
+````
 
 ## String Methods
 
+````python
+```
 hello = 'hello'
 print(type(hello))
 
@@ -121,9 +153,13 @@ print(hello)
 
 hello = 'heLLO World'.lower().count('o')
 print(hello)
+```
+````
 
 ## Conditions and conditional operators
 
+````python
+```
 == - equal operator
 != - not equal operator
 <= - less than or equal operator
@@ -131,7 +167,7 @@ print(hello)
 < - less than
 > - greater than operator
 
-// We use ASCII table to compare strings (ordinal value)
+# We use ASCII table to compare strings (ordinal value)
 
 x = 'hello'
 y = 'hello'
@@ -147,15 +183,19 @@ print('a:', ord('a'))
 print('Z:', ord('Z'))
 
 print('Is "a" is greater than "Z":', 'a' > 'Z')
+```
+````
 
 ## Chained conditionals
 
-// Keep the order of the operators when evaluate condition
+> Keep the order of the operators when evaluate condition
 
-not - reverse the boolean output
-and
-or - True if at least one condition is true
+**not** - reverse the boolean output
+**and** - True if all conditions are true
+**or** - True if at least one condition is true
 
+````python
+```
 x = 7
 y = 8
 z = 0
@@ -170,9 +210,13 @@ result4 = result1 or not result2 or result3
 print(result4)
 
 print (not (False and True or True))
+```
+````
 
 ## IF / ELSE / ELIF statements
 
+````python
+```
 if condition:
     statement
 
@@ -186,13 +230,16 @@ elif x == 'Sarah':
     print('Random')
 else:
     print('No')
+```
+````
 
 ## Collections
 
-// Collection is ordered or unordered group of elements
+> Collection is ordered or unordered group of elements
+> List is mutable and ordered
 
-// List is mutable and ordered
-
+````python
+```
 x = [4, True, 'hi']
 x.append('hello') # add additional element in the list
 x.extend([4,5,5]) # extend the list with additional list
@@ -203,23 +250,31 @@ print(x[1])
 
 y = x[:]
 print(y)
+```
+````
 
-// Tuple is immutable and unordered
+> Tuple is immutable and unordered
 
+````python
+```
 x = (0,0,2,2)
 print(x[0])
+```
+````
 
 ## For Loops
 
-//stop
+````python
+```
+# stop
 for i in range(10):
     print(i)
 
-//start, stop
+# start, stop
 for i in range(5, 10):
     print(i)
 
-//start, stop, step
+# start, stop, step
 for i in range(5, 10, 2):
     print(i)
 
@@ -229,12 +284,16 @@ for i in range(len(x)):
 
 for i, element in enumerate(x):
     print(i, element)
+```
+````
 
 ## While Loops
 
-// while condition == True:
-    go ahead and do something
+> while condition == True: \
+>------> go ahead and do something
 
+````python
+```
 i = 0
 while i < 10:
     print('run')
@@ -246,27 +305,35 @@ while True:
     x += 1
     if x == 10:
         break
+```
+````
 
 ## Slice operator
 
+````python
+```
 sliced = [start:stop:step]
+sliced = x[::-1] # reverse a list
+```
+````
 
-sliced = x[::-1] - reverse a list
+- Details: https://www.geeksforgeeks.org/python-slice-function/
 
--> Details: https://www.geeksforgeeks.org/python-slice-function/
+> A sequence of object of any type(string, bytes, tuple, list or range) or the object which implements __getitem__() and __len__() method then this object can be sliced using slice() method.
 
-// A sequence of object of any type(string, bytes, tuple, list or range) or the object which implements __getitem__() and __len__() method then this object can be sliced using slice() method.
+- Syntax:
 
-// Syntax:
-
+````python
+```
 slice(stop)
 slice(start, stop, step)
-// Parameters:
-start: Starting index where the slicing of object starts.
-stop: Ending index where the slicing of object stops.
-step: It is an optional argument that determines the increment between each index for slicing.
 
-// Return Type: Returns a sliced object containing elements in the given range only.
+# Parameters:
+# start: Starting index where the slicing of object starts.
+# stop: Ending index where the slicing of object stops.
+# step: It is an optional argument that determines the increment between each index for slicing.
+
+# Return Type: Returns a sliced object containing elements in the given range only.
 
 x = [0,1,2,3,4,5,6,7,8]
 
@@ -278,23 +345,25 @@ sliced = x[0:4:2]
 sliced = y[::-1]
 
 print(sliced)
+```
+````
 
 ## Sets Data Type
 
--> Details: https://www.geeksforgeeks.org/python-set-method/
+- Details: https://www.geeksforgeeks.org/python-set-method/
 
-// Set is extremely fast to look up for elements than the other typical methods for searching
+> Set is extremely fast to look up for elements than the other typical methods for searching \
+> Set, a term in mathematics for a sequence consisting of distinct language is also extended in its language by Python and can easily be made using set(). \
+> set() method is used to convert any of the iterable to sequence of iterable elements with distinct elements, commonly called Set. 
 
-// Set, a term in mathematics for a sequence consisting of distinct language is also extended in its language by Python and can easily be made using set().
+- Syntax : set(iterable)
 
-// set() method is used to convert any of the iterable to sequence of iterable elements with distinct elements, commonly called Set. 
+> Parameters : Any iterable sequence like list, tuple or dictionary. \
+> Returns : An empty set if no element is passed. Non-repeating element iterable modified as passed as argument. \
+> Don’t worry if you get an unordered list from the set. Sets are unordered. Use sorted(set(sampleList)) to get it sorted
 
-Syntax : set(iterable)
-Parameters : Any iterable sequence like list, tuple or dictionary.
-Returns : An empty set if no element is passed. Non-repeating element iterable modified as passed as argument. 
- 
-// Don’t worry if you get an unordered list from the set. Sets are unordered. Use sorted(set(sampleList)) to get it sorted
-
+````python
+```
 x = set()
 s = {4,32,2,2}
 s.add(5)
@@ -332,59 +401,65 @@ for key, value in x.items():
 
 for key in x:
     print(key, x[key])
+```
+````
 
 ## Comprehensions
 
-// Details: https://www.geeksforgeeks.org/comprehensions-in-python/
+- Details: https://www.geeksforgeeks.org/comprehensions-in-python/
 
-// Comprehensions in Python provide us with a short and concise way to construct new sequences (such as lists, set, dictionary etc.) using sequences which have been already defined. Python supports the following 4 types of comprehensions:
+> Comprehensions in Python provide us with a short and concise way to construct new sequences (such as lists, set, dictionary etc.) using sequences which have been already defined. Python supports the following 4 types of comprehensions:
 
-*List Comprehensions
-*Dictionary Comprehensions
-*Set Comprehensions
-*Generator Comprehensions
+- List Comprehensions
+- Dictionary Comprehensions
+- Set Comprehensions
+- Generator Comprehensions
 
-List Comprehensions:
-List Comprehensions provide an elegant way to create new lists. The following is the basic structure of a list comprehension:
+````python
+```
+#The following is the basic structure of a list comprehension:
 
 output_list = [output_exp for var in input_list if (var satisfies this condition)]
 
-// Note that list comprehension may or may not contain an if condition. List comprehensions can contain multiple for (nested list comprehensions).
+# Note that list comprehension may or may not contain an if condition. List comprehensions can contain multiple for (nested list comprehensions).
 
-// Constructing output list WITHOUT Using List comprehensions
+# Constructing output list WITHOUT Using List comprehensions
 input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
 
 output_list = []
 
-// Using loop for constructing output list
+# Using loop for constructing output list
 for var in input_list:
 	if var % 2 == 0:
 		output_list.append(var)
 
 print("Output List using for loop:", output_list)
 
-// Using List comprehensions for constructing output list
+# Using List comprehensions for constructing output list
 input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
 
 list_using_comp = [var for var in input_list if var % 2 == 0]
 
-print("Output List using list comprehensions:",
-							list_using_comp)
+print("Output List using list comprehensions:", list_using_comp)
 
-// When use Dictionary:
+# When use Dictionary:
 x = {i:0 for i in range(10) if i % 2 == 0}
 print(x)
 
-// When use Set:
+# When use Set:
 x = {i for i in range(10) if i % 2 == 0}
 print(x)
 
-// When use Tuple:
+# When use Tuple:
 x = tuple(i for i in range(10) if i % 2 == 0)
 print(x)
+```
+````
 
 ## Functions
 
+````python
+```
 def func1(x, y):
     print('Run', x, y)
     def func2():
@@ -429,9 +504,13 @@ def func(x):
 
 x = func(3)
 x()
+```
+````
 
 ## Unpack operator / *ARGS and **KWARGS
 
+````python
+```
 def func(*args, **kwargs):
     pass
 
@@ -448,10 +527,14 @@ def func(*args, **kwargs):
     print(args,kwargs)
 
 func(1,2,3,4,5,one=0, two=1)
+```
+````
 
 ## Scope and Global
 
-// Example for Global and Local variables
+````python
+```
+# Example for Global and Local variables
 x = 'tim' # global
 
 def func(name):
@@ -461,53 +544,75 @@ def func(name):
 print('x')
 func('changed')
 print('x')
+```
+````
 
 ## Exceptions
 
-// build-in
+````python
+```
+# build-in
 raise Exception('Bad')
 
 raise FileExistsError('')
+```
+````
 
 ## Handling Exceptions
 
+````python
+```
 try:
     x = 7 / 0
 except Exception as e:
     print(e)
 finally:
     print('finally')
+```
+````
 
 ## Lambda
 
-// It is one line anonymous function
+> It is one line anonymous function
 
+````python
+```
 x = lambda x: x + 5
 
 print(x(2))
+```
+````
 
 ## Map and Filter
 
-// Example of Map
+````python
+```
+# Example of Map
 x = [1, 2, 3, 4, 5]
 
 mp = map(lambda i: i + 2, x)
 
 print(list(mp))
 
-// Example of Filter
+# Example of Filter
 x = [1, 2, 3, 4, 5]
 
 fl = filter(lambda i: i % 2 == 0, x)
 
 print(list(fl))
+```
+````
 
 ## F Strings
 
-// New in Python 3.6
+> New in Python 3.6
 
+````python
+```
 tim = 89
 x = f'hello {6 + 8} {tim}'
 
 print(x)
 print(f'hi {7+10} {tim}')
+```
+````
