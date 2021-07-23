@@ -70,8 +70,7 @@ print(hello, world)
 ```
 ````
 
-> Variables Naming convention
-**snake_case**
+> Variables Naming convention is **snake_case**
 
 ## Getting User Input
 
