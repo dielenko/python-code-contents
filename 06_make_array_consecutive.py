@@ -15,7 +15,7 @@ def make_array_consecutive2(x):
             if not ((x[a] + 1) == x[b]):
                 
                 while True:
-                                        
+                    
                     if ((x[a] + iterate) == x[b]):
                         break
                     iterate += 1
