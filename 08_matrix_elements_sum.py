@@ -8,7 +8,7 @@ def matrix_elements_sum(r_matrix):
     for i in range(0, len(r_matrix)):
         for j in range(len(r_matrix[0])):
             if r_matrix[i][j] == 0:
-                haunted_room.append(j)  # append the element index
+                haunted_room.append(j)
         for k in range(len(r_matrix[0])):
 
             if k not in haunted_room:
