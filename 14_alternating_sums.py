@@ -1,6 +1,4 @@
 # https://app.codesignal.com/arcade/intro/level-4/cC5QuL9fqvZjXJsW9
-
-
 def alternating_sums(weights):
     team_1 = []
     team_2 = []
