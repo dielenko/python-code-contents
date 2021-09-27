@@ -1,1 +1,1 @@
-# python-code-contents
+# python-labs-codesignal
