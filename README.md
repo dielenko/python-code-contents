@@ -1,1 +1,1 @@
-# python-code-contents
+# django-fundamentals
