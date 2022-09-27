@@ -22,4 +22,6 @@ sudo curl \
     -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
     -o ~/.bash_completion_custom/.git-completion.sh
 
+source ~/.bashrc
+
 echo "Done!"
