@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  app:
+    build: 
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        VARIANT: "3.10-bullseye"
+        NODE_VERSION: "lts/*"
+    ports:
+      - 8000:8000
+    volumes:
+      # Use local git config into docker container
+      - ~/.gitconfig:/root/.gitconfig
+      # This is where VS Code should expect to find your project's source code and the value of "workspaceFolder" in .devcontainer/devcontainer.json
+      - ..:/workspace:cached
+      # Commented the next section if you would like to disable external repos/files mount. See https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount.
+      - ~/repos:/repos:cached
+    command: sleep infinity
+      # Set memory limits on container level
+    mem_limit: 4g
+    mem_reservation: 4g
