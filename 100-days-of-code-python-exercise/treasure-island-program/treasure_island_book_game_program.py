@@ -37,7 +37,6 @@ print('''
 first_user_attempt = int(
     input('Which is your initial choice of page. The book size is 100 pages: \n'))
 
-
 # Prepare the output images based on the user input
 game_over_image = (r'''
                      __...__...__
@@ -76,7 +75,14 @@ win_game_image = (r'''
 ''')
 
 # Make a decision statement based on the user input and provide next steps in the game
-if first_user_attempt >= 50 and first_user_attempt <= 80:
+if first_user_attempt == 0:
+    print(f'''
+    Your choice is page *** {first_user_attempt} ***. This is out of the dedicated boundary between *** 1 and 100 *** that you can use.
+    --------------------------------------------------------
+    | Please restart the game and use a valid page number. |
+    --------------------------------------------------------
+    ''')
+elif first_user_attempt >= 50 and first_user_attempt <= 80:
     print(
         f"Your choice is page *** {first_user_attempt} ***. That means you lose the game. Game Over!")
     print(game_over_image)
@@ -88,7 +94,15 @@ elif first_user_attempt >= 1 and first_user_attempt < 50:
 
     second_user_attempt = int(
         input('Which is your second choice of page. The book size is 100 pages: \n'))
-    if second_user_attempt >= 1 and second_user_attempt <= 80:
+
+    if second_user_attempt == 0:
+        print(f'''
+        Your choice is page *** {second_user_attempt} ***. This is out of the dedicated boundary between *** 1 and 100 *** that you can use.
+        --------------------------------------------------------
+        | Please restart the game and use a valid page number. |
+        --------------------------------------------------------
+        ''')
+    elif second_user_attempt >= 1 and second_user_attempt <= 80:
         print(
             f"Your choice is page *** {second_user_attempt} ***. That means you lose the game. Game Over!")
         print(game_over_image)
