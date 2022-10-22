@@ -1,5 +1,6 @@
 import random
 
+# Declare ascii art variables
 rock = '''
     _______
 ---'   ____)
@@ -27,12 +28,12 @@ scissors = '''
 ---.__(___)
 '''
 
-# Write your code below this line 👇
+# Create list of game elements covered by the declared ascii art variables
 game_elements = [rock, paper, scissors]
 user_input = int(input('What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. \n'))
 computer_input = random.randint(0, 2)
 
-
+# Iterate over the user and computer input to do a match the choice and define the game output
 if user_input > 2 or user_input < 0:
     print("User input is invalid. Restart the game!")
 else:
