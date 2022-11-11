@@ -46,7 +46,8 @@
 				"njqdev.vscode-python-typehint",
 				"almenon.arepl",
 				"njpwerner.autodocstring",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"devzstudio.emoji-snippets"
 			]
 		}
 	},
