@@ -42,7 +42,7 @@ def reverse_in_parentheses(input_string):
         double = False
 
     for el in p_strings:
-        # TODO: Not working for "foo(bar(baz))blim"
+        # Not working for "foo(bar(baz))blim"
         if double == True:
             double_str = "".join(p_strings)
             cut_str = re.findall("\(.*?\)", double_str)
