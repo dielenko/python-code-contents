@@ -47,7 +47,8 @@
 				"njpwerner.autodocstring",
 				"eamodio.gitlens",
 				"streetsidesoftware.code-spell-checker",
-				"Gruntfuggly.todo-tree"
+				"Gruntfuggly.todo-tree",
+				"twixes.pypi-assistant"
 			]
 		}
 	},
