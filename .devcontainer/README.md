@@ -1,4 +1,4 @@
-<h1>Python 3 Docker container</h1>
+# Python 3 Docker container
 
 ## Summary
 
@@ -8,7 +8,7 @@ This solution provides a way to get going quickly with configuration of Python 3
 Includes `Python 3`, `Git`, [Common Utilities](https://github.com/devcontainers/features/tree/main/src/common-utils) and the related `extensions` and `dependencies`.  
 _The solution can be prepared as a development environemnt shared across all team members in a dedicated project._  
 This abstraction allows you to open any folder inside (or mounted into) the prepared `Docker container` and take advantage of VS Code's full feature set.  
-A `devcontainer.json` file in the project tells VS Code how to access (or create) a development container with a well-defined tool and runtime stack.  
+A `devcontainer.json` file in the project tells VS Code how to access (or create) a development container with a well-defined tools and runtime stack.  
 This container can be used to run Python 3 and all of the related tools.
 
 _Enabled VS Code Extensions:_
